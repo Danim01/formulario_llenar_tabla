@@ -1,0 +1,66 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Formulario</title>
+    </head>
+    <body>
+        <div>
+            <form id="formulario">
+                <h1>Información Personal</h1>
+                <p>Este formulario tiene como objetivo recolectar información personal de las personas a las cuales les llegue este formulario.</p>
+                <label for="nombre">
+                    Nombre
+                    <input type="text" id="nombre" placeholder="Daniela">
+                </label>
+                <label for="apellido">
+                    Apellido
+                    <input type="text" id="apellido" placeholder="Buitrago">
+                </label>
+                <label for="edad">
+                    Edad
+                    <input type="number" id="edad" min="15" max="50" placeholder="18">
+                </label>
+                <p>¿A qué se dedica?</p>
+                <label for="ocupacion">
+                    Estudia
+                    <input type="radio" id="ocupacion" class="ocupacion" value="Estudia" name="ocupacion">
+                </label>
+
+                <label for="ocupacion">
+                    Trabaja
+                    <input type="radio" id="ocupacion" checked class="ocupacion" value="Trabaja" name="ocupacion">
+                </label>
+                <label for="celular">
+                    Celular
+                    <input type="text" id="celular" placeholder="3122285603">
+                </label>
+                <label for="email">
+                    Correo
+                    <input type="email" id="email" placeholder="dani@gmail.com">
+                </label>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </div>
+        <h1>Tabla de información</h1>
+        <p>En esta tabla encontraras la información recolectada de las personas que llenaron el formulario.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Ocupación</th>
+                    <th>Celular</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <script src="./js/información.js"></script>
+    </body>
+    </html>
